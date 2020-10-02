@@ -25,7 +25,7 @@ public class PlayerMove : MonoSingleton<PlayerMove>, IPointerDownHandler, IPoint
 
         if(Input.GetButtonUp("Fire1"))
         {
-            GameObject.Find("Point").GetComponent<Rotate>().downCheck = true;
+            GameObject.Find("GameManager").GetComponent<GameManager>().downCheck = true;
         }
     }
 }

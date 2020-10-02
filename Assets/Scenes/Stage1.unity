@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 1042999463}
   - component: {fileID: 1042999468}
   m_Layer: 0
-  m_Name: Point
+  m_Name: Balssa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Xml.Schema;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -9,9 +10,10 @@ public class Rotate : MonoBehaviour
 {
     private float z = 0f;
     private bool Check = false;
-    public bool downCheck = false;
     public GameObject Pl;
     public Transform FirePos;
+
+    
 
     void Start()
     {
@@ -56,12 +58,15 @@ public class Rotate : MonoBehaviour
         {
             StopCoroutine(Moving());
             transform.localScale = new Vector2(transform.localScale.x+0.001f,transform.localScale.y+0.001f);
-            
+            GameManager.Instance.bulletSpeed += 0.1f;
         }
-        if (downCheck == true)
+        if (GameManager.Instance.downCheck == true)
         {
             Instantiate(Pl, FirePos.transform.position, FirePos.transform.rotation);
-            downCheck = false;
+            gameObject.SetActive(false);
+            GameObject.Find("pre_directiongauge").SetActive(false);
+            GameObject.Find("PlayerCheck").SetActive(false);
+            GameManager.Instance.downCheck = false;
         }
     }
 }

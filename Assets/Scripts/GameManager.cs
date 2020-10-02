@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoSingleton<GameManager>
 {
-    
+    public float bulletSpeed = 1f;
+    public bool downCheck = false;
 }
