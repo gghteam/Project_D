@@ -63,9 +63,9 @@ public class Rotate : MonoBehaviour
         if (GameManager.Instance.downCheck == true)
         {
             Instantiate(Pl, FirePos.transform.position, FirePos.transform.rotation);
-            gameObject.SetActive(false);
-            GameObject.Find("pre_directiongauge").SetActive(false);
-            GameObject.Find("PlayerCheck").SetActive(false);
+            //gameObject.SetActive(false);
+            //GameObject.Find("pre_directiongauge").SetActive(false);
+            //GameObject.Find("PlayerCheck").SetActive(false);
             GameManager.Instance.downCheck = false;
         }
     }
