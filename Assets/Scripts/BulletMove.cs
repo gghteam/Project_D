@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class BulletMove : MonoBehaviour
 {
-    [SerializeField] float speed = 1000f;
     public Rigidbody2D rb;
     //floa  t randomX, randomY;
 
@@ -14,7 +14,7 @@ public class BulletMove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         transform.rotation = GameObject.Find("Balssa").transform.rotation;
-        rb.AddRelativeForce(Vector2.up * speed);
+        rb.AddRelativeForce(Vector2.up * GameManager.Instance.speed);
     }
 
     void Update()

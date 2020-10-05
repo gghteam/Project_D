@@ -58,15 +58,21 @@ public class Rotate : MonoBehaviour
         {
             StopCoroutine(Moving());
             transform.localScale = new Vector2(transform.localScale.x+0.001f,transform.localScale.y+0.001f);
-            GameManager.Instance.bulletSpeed += 0.1f;
+            GameManager.Instance.speed += 1f;
         }
         if (GameManager.Instance.downCheck == true)
         {
             Instantiate(Pl, FirePos.transform.position, FirePos.transform.rotation);
-            //gameObject.SetActive(false);
-            //GameObject.Find("pre_directiongauge").SetActive(false);
-            //GameObject.Find("PlayerCheck").SetActive(false);
+            StartCoroutine(FalseIdle());
             GameManager.Instance.downCheck = false;
         }
+    }
+
+    IEnumerator FalseIdle()
+    {
+        yield return new WaitForSeconds(0.1f);
+        gameObject.SetActive(false);
+        GameObject.Find("pre_directiongauge").SetActive(false);
+        GameObject.Find("PlayerCheck").SetActive(false);
     }
 }
