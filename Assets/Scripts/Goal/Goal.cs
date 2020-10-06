@@ -9,7 +9,7 @@ public class Goal : MonoBehaviour
     {
         if(col.tag == "Player")
         {
-            SceneManager.LoadScene("Stage2");
+            SceneManager.LoadScene("Stage3");
         }
     }
 }
