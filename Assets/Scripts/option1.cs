@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class option : MonoBehaviour
+public class option1 : MonoBehaviour
 {
     public GameObject Panel;
 
-    public void Open()
+    public void Open1()
     {
         Panel.SetActive(true);
     }
-    public void Close()
+    public void Close1()
     {
         Panel.SetActive(false);
     }
