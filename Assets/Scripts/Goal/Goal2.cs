@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Goal1 : MonoBehaviour
+public class Goal2 : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.tag == "Player")
+        if (col.tag == "Player")
         {
-            SceneManager.LoadScene("Stage4");
+            SceneManager.LoadScene("Stage5");
         }
     }
 }
