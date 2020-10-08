@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class StartBtn : MonoBehaviour
 {
-    public void Stage()
+    public void Level()
     {
-        SceneManager.LoadScene("Stage1");
+        SceneManager.LoadScene("Level");
     }
 
 }
