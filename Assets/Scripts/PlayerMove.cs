@@ -13,6 +13,7 @@ public class PlayerMove : MonoSingleton<PlayerMove>, IPointerDownHandler, IPoint
     public void OnPointerUp(PointerEventData eventData)
     {
         isCheck = false;
+        GameObject.Find("GameManager").GetComponent<GameManager>().downCheck = true;
     }
 
     void Start()
@@ -23,9 +24,9 @@ public class PlayerMove : MonoSingleton<PlayerMove>, IPointerDownHandler, IPoint
     void Update()
     {
 
-        if(Input.GetButtonUp("Fire1"))
+        /*if(Input.GetButtonUp("PlayerCheck"))
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().downCheck = true;
-        }
+        }*/
     }
 }
