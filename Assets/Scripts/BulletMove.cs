@@ -16,6 +16,13 @@ public class BulletMove : MonoBehaviour
         transform.rotation = GameObject.Find("Balssa").transform.rotation;
         rb.AddRelativeForce(Vector2.up * GameManager.Instance.speed);
     }
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.transform.tag == "wall")
+        {
+            GameManager.Instance.CCount += 1;
+        }
+    }
 
     void Update()
     {
