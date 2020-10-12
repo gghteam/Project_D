@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BulletMove : MonoBehaviour
 {
@@ -21,6 +22,10 @@ public class BulletMove : MonoBehaviour
         if(col.transform.tag == "wall")
         {
             GameManager.Instance.CCount += 1;
+        }
+        if(col.transform.tag == "sink")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
