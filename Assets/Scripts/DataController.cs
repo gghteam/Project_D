@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DataController : MonoBehaviour
 {
@@ -70,10 +72,5 @@ public class DataController : MonoBehaviour
         string filePath = Application.persistentDataPath + GameDataFileName;
         File.WriteAllText(filePath, ToJsonData);
         Debug.Log("저장완료");
-    }
-
-    private void OnApplicationQuit()
-    {
-        SaveGameData();
     }
 }

@@ -10,6 +10,7 @@ public class GameManager : MonoSingleton<GameManager>
 
     public float speed = 1000f;
     public float CCount = 0f;
+    public int currentLevel = 2;
 
     private void Update()
     {
@@ -18,4 +19,5 @@ public class GameManager : MonoSingleton<GameManager>
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
+
 }
