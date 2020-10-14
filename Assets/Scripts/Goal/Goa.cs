@@ -9,7 +9,7 @@ public class Goa : MonoBehaviour
     {
         if (col.tag == "Player")
         {
-            GameObject.Find("MainMenuCotrol").GetComponent<StageData>().CLevel += 1;
+            GameObject.Find("MainMenuControl").GetComponent<SJson>().stageData.CLevel += 1;
             SceneManager.LoadScene("Stage2");
         }
     }

@@ -31,6 +31,10 @@ public class SJson : MonoBehaviour
     {
         SceneManager.LoadScene(level);
     }
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 }
 
 [System.Serializable]
