@@ -35,6 +35,12 @@ public class SJson : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
     }
+
+    private void OnApplicationQuit()
+    {
+        SaveStageDataToJson();
+    }
+    
 }
 
 [System.Serializable]

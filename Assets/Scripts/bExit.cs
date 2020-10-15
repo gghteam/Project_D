@@ -9,5 +9,10 @@ public class bExit : MonoBehaviour
         Application.Quit();
         Debug.Log("Button Click");
     }
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 }
     

@@ -73,4 +73,9 @@ public class DataController : MonoBehaviour
         File.WriteAllText(filePath, ToJsonData);
         Debug.Log("저장완료");
     }
+    private void OnApplicationQuit()
+    {
+        SaveGameData();
+    }
+
 }
