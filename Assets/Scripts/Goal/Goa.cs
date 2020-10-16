@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Goa : MonoBehaviour
 {
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "Player")
         {
-            GameObject.Find("MainMenuControl").GetComponent<SJson>().stageData.CLevel += 1;
             SceneManager.LoadScene("Stage2");
         }
     }

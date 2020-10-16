@@ -17,6 +17,7 @@ public class GameManager : MonoSingleton<GameManager>
         if(CCount > 9)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            CCount = 0;
         }
     }
 

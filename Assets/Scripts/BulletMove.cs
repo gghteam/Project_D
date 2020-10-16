@@ -26,6 +26,7 @@ public class BulletMove : MonoBehaviour
         if(col.transform.tag == "sink")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameManager.Instance.CCount = 0;
         }
     }
 

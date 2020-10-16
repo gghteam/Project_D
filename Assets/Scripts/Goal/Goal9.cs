@@ -9,7 +9,6 @@ public class Goal9 : MonoBehaviour
     {
         if (col.tag == "Player")
         {
-            GameObject.Find("MainMenuControl").GetComponent<SJson>().stageData.CLevel += 1;
             SceneManager.LoadScene("Stage12");
         }
     }
