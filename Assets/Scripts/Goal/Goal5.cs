@@ -9,6 +9,7 @@ public class Goal5 : MonoBehaviour
     {
         if (col.tag == "Player")
         {
+            GameManager.Instance.CCount = 0;
             SceneManager.LoadScene("Stage8");
         }
     }
