@@ -1581,6 +1581,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94985374bca9fa34a81459b886c9db0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  standard_resolution: {x: 0, y: 0}
+  camera1: {fileID: 0}
+  isLandScape: 0
 --- !u!1 &1164016337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,7 +2111,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 1
+  m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
