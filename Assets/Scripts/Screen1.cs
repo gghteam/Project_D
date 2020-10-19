@@ -8,5 +8,6 @@ public class Screen1 : MonoBehaviour
     private void Awake()
     {
         Screen.orientation = ScreenOrientation.Landscape;
+        Application.targetFrameRate = 60;
     }
 }

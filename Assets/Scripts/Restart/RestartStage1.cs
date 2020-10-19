@@ -10,11 +10,12 @@ public class RestartStage1 : MonoBehaviour
 
     public void Restaret()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         GameManager.Instance.CCount = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void MainMenu()
     {
+        GameManager.Instance.CCount = 0;
         SceneManager.LoadScene(1);
     }
     public void Quit()
