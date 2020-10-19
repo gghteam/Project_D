@@ -18,6 +18,7 @@ public class GameManager : MonoSingleton<GameManager>
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             CCount = 0;
+            speed = 1000f;
         }
     }
 

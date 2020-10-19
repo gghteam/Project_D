@@ -11,6 +11,7 @@ public class Goa : MonoBehaviour
         if (col.tag == "Player")
         {
             GameManager.Instance.CCount = 0;
+            GameManager.Instance.speed = 1000f;
             SceneManager.LoadScene("Stage2");
         }
     }
