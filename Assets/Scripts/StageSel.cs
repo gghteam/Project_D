@@ -6,13 +6,12 @@ public class StageSel : MonoBehaviour
 {
     public void Start()
     {
-        /*
-        for (int currentLevel = 1; currentLevel < GameObject.Find("MainMenuControl").GetComponent<SJson>().stageData.levelmax; currentLevel++)
+        /*for (int currentLevel = 1; currentLevel < GameManager.Instance.saveJson.levelmax; currentLevel++)
         {
-            if (currentLevel > GameObject.Find("MainMenuControl").GetComponent<SJson>().stageData.CLevel)
-                GameObject.Find("MainMenuControl").GetComponent<SJson>().stageData.Stage[currentLevel].interactable = false;
+            if (currentLevel > GameManager.Instance.saveJson.CLevel)
+                GameManager.Instance.saveJson.Stage[currentLevel].interactable = false;
             else
-                GameObject.Find("MainMenuControl").GetComponent<SJson>().stageData.Stage[currentLevel].interactable = true;
+                GameManager.Instance.saveJson.Stage[currentLevel].interactable = true;
         }*/
     }
 

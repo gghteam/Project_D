@@ -11,6 +11,7 @@ public class RestartStage1 : MonoBehaviour
     public void Restaret()
     {
         GameManager.Instance.CCount = 0;
+        GameManager.Instance.speed = 1000f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void MainMenu()

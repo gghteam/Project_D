@@ -12,6 +12,7 @@ public class Goa : MonoBehaviour
         {
             GameManager.Instance.CCount = 0;
             GameManager.Instance.speed = 1000f;
+            GameManager.Instance.saveJson.CLevel += 1;
             SceneManager.LoadScene("Stage2");
         }
     }

@@ -13,13 +13,6 @@ public class Rotate : MonoBehaviour
     public GameObject Pl;
     public Transform FirePos;
 
-    
-
-    void Start()
-    {
-        
-    }
-
     private IEnumerator Moving()
     {
         yield return null;

@@ -27,6 +27,7 @@ public class BulletMove : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             GameManager.Instance.CCount = 0;
+            GameManager.Instance.speed = 1000f;
         }
     }
 

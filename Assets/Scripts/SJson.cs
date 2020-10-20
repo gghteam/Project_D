@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class SJson : MonoBehaviour
 {
-   /* public StageData stageData;
+    public StageData stageData;
 
     [ContextMenu("To Json Data")]
     public void SaveStageDataToJson()
@@ -26,20 +26,20 @@ public class SJson : MonoBehaviour
         string jsonData = File.ReadAllText(path);
         stageData = JsonUtility.FromJson<StageData>(jsonData);
     }
-    */
+
     public void stageToLoad(int level)
     {
         SceneManager.LoadScene(level);
     }
-    /*private void Awake()
+    private void Awake()
     {
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
     }
 
     private void OnApplicationQuit()
     {
         SaveStageDataToJson();
-    }*/
+    }
     
 }
 
@@ -47,6 +47,6 @@ public class SJson : MonoBehaviour
 public class StageData
 {
     public Button[] Stage;
-    public int levelmax = 7;
-    public int CLevel = 1;
+    public int levelmax = 18;
+    public int CLevel = 0;
 }

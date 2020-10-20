@@ -12,6 +12,13 @@ public class GameManager : MonoSingleton<GameManager>
     public float CCount = 0f;
     public int currentLevel = 2;
 
+    public StageData saveJson;
+
+    private void Start()
+    {
+       saveJson = new StageData();
+    }
+
     private void Update()
     {
         if(CCount > 9)
