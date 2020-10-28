@@ -28,13 +28,13 @@ public class Rotate : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, z);
         }
         //최대치 도달시 반대로 회전
-        if (z <= -90)
+        if (z <= -85)
         {
             //Debug.Log("최대치");
             Check = false;
         }
 
-        if (z >= 91)
+        if (z >= 81)
         {
             //Debug.Log("최소치");
             Check = true;
