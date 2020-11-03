@@ -5,7 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Goa : MonoBehaviour
 {
-
+    private LevelSelect levelS;
+    private void Start()
+    {
+        levelS = new LevelSelect();
+    }
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "Player")

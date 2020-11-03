@@ -6,7 +6,7 @@ public class StageSel : MonoBehaviour
 {
     public void Start()
     {
-        /*for (int currentLevel = 1; currentLevel < GameManager.Instance.saveJson.levelmax; currentLevel++)
+        /*for (int currentLevel = 2; currentLevel < GameManager.Instance.saveJson.levelmax; currentLevel++)
         {
             if (currentLevel > GameManager.Instance.saveJson.CLevel)
                 GameManager.Instance.saveJson.Stage[currentLevel].interactable = false;
