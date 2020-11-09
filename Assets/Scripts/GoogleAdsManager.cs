@@ -11,7 +11,7 @@ public class GoogleAdsManager : MonoBehaviour
     void Start()
     {
     #if UNITY_ANDROID
-        string appId = "ca-app-pub-3940256099942544~3347511713";
+        string appId = "ca-app-pub-3462718233988228~5222508145";
     #elif UNITY_IPHONE
         string appId = "ca-app-pub-3940256099942544~1458002511";
     #else
