@@ -4,7 +4,7 @@ using GoogleMobileAds.Api;
 
 public class GoogleAdsManager : MonoBehaviour
 {
-    private BannerView bannerView;
+    /*private BannerView bannerView;
     private InterstitialAd interstitial;
 
     // Start is called before the first frame update
@@ -96,5 +96,5 @@ public class GoogleAdsManager : MonoBehaviour
         {
             RequestInterstitial();
         }
-    }
+    }*/
 }
