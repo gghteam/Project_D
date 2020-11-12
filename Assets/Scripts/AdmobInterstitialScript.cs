@@ -7,7 +7,7 @@ public class AdmobInterstitialScript : MonoBehaviour
 {
     //전면 광고 Test ID : ca-app-pub-3940256099942544/1033173712
     //전면 광고 ID가 들어가는 곳입니다.
-    private readonly string InterstitialID = "ca-app-pub-3940256099942544/1033173712";
+    private readonly string InterstitialID = "ca-app-pub-3462718233988228/9359179801";
 
     private InterstitialAd _interAd;
     public static bool _showAd = false;
