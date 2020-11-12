@@ -23,7 +23,7 @@ public class SoundOnOff : MonoBehaviour
 
         else
         {
-            audio.volume = 1;
+            audio.volume = (float)0.1;
             isSound = true;
         }
 

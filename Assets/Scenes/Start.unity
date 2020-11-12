@@ -152,7 +152,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -250,9 +250,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgmSounds:
   - sonudName: Circle
-    clip: {fileID: 8300000, guid: 104d11982b869e04da1e76c8d82a9f9d, type: 3}
+    clip: {fileID: 8300000, guid: 8412faa3fc2a364438700fa4d68e4371, type: 3}
   - sonudName: Circle
-    clip: {fileID: 8300000, guid: 104d11982b869e04da1e76c8d82a9f9d, type: 3}
+    clip: {fileID: 8300000, guid: 8412faa3fc2a364438700fa4d68e4371, type: 3}
   bgmPlayer: {fileID: 6460852}
 --- !u!4 &6460854
 Transform:
