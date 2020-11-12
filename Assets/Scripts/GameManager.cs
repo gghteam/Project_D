@@ -15,6 +15,9 @@ public class GameManager : MonoSingleton<GameManager>
 
     public StageData saveJson;
 
+    public int touchCount = 0;
+    public int stageCount = 0;
+
     private void Start()
     {
        saveJson = new StageData();

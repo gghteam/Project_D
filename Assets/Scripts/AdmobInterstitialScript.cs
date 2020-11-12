@@ -38,6 +38,17 @@ public class AdmobInterstitialScript : MonoBehaviour
     {
         StartCoroutine("showInterAd");
     }
+    public void Count()
+    {
+        GameManager.Instance.touchCount++;
+    }
+    public void idleShow()
+    {
+        if(GameManager.Instance.touchCount % 2 == 0)
+        {
+            show();
+        }
+    }
 
     private IEnumerator showInterAd()
     {

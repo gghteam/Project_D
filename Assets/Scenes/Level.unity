@@ -918,6 +918,8 @@ MonoBehaviour:
     - {fileID: 284208068}
     levelmax: 18
     CLevel: 1
+  touchCount: 0
+  stageCount: 0
 --- !u!4 &297023773
 Transform:
   m_ObjectHideFlags: 0
@@ -1755,7 +1757,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0059412, y: -0.0001297}
+  m_AnchoredPosition: {x: 0.0059412, y: -0.00012207031}
   m_SizeDelta: {x: 1919.988, y: 1079.9996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &666246738
