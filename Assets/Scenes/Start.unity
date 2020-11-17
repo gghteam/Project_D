@@ -131,8 +131,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6460854}
   - component: {fileID: 6460853}
-  - component: {fileID: 6460852}
   - component: {fileID: 6460855}
+  - component: {fileID: 6460852}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
