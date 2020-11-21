@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class option1 : MonoBehaviour
 {
     public GameObject Panel;
+    public GameObject Panel2;
 
     public void Open1()
     {
@@ -14,6 +16,14 @@ public class option1 : MonoBehaviour
     public void Close1()
     {
         Panel.SetActive(false);
+    }
+    public void Open2()
+    {
+        Panel2.SetActive(true);
+    }
+    public void Close2()
+    {
+        Panel2.SetActive(false);
     }
 
     public void load1()
