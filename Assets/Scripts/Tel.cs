@@ -30,5 +30,7 @@ public class Tel : MonoBehaviour
         yield return null;
         targetObj.transform.position = toObj.transform.position;
         isCheck = false;
+        toObj.SetActive(false);
+        gameObject.SetActive(false);
     }
 }
