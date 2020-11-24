@@ -9,7 +9,7 @@ public class GameManager : MonoSingleton<GameManager>
 {
     public bool downCheck = false;
 
-    public float speed = 1000f;
+    public float speed = 500f;
     public int CCount = 0;
     public int currentLevel = 2;
 

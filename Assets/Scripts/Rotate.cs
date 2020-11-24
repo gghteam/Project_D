@@ -51,7 +51,12 @@ public class Rotate : MonoBehaviour
         {
             StopCoroutine(Moving());
             transform.localScale = new Vector2(transform.localScale.x+0.001f,transform.localScale.y+0.001f);
-            GameManager.Instance.speed += 1f;
+            GameManager.Instance.speed += 30f;
+            /*if(GameManager.Instance.speed > 1000)
+            {
+                GameManager.Instance.speed = 500;
+                
+            }*/
         }
         if (GameManager.Instance.downCheck == true)
         {
