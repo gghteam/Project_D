@@ -8,6 +8,9 @@ public class Goal17 : MonoBehaviour
     public void LoadNextScene()
     {
         Scene scene1 = SceneManager.GetActiveScene();
+        GameManager.Instance.CCount = 0;
+        GameManager.Instance.speed = 500f;
+        GameManager.Instance.stageCount++;
 
         int curScene = scene1.buildIndex;
 
@@ -20,7 +23,7 @@ public class Goal17 : MonoBehaviour
         if (col.tag == "Player")
         {
             GameManager.Instance.CCount = 0;
-            GameManager.Instance.speed = 1000f;
+            GameManager.Instance.speed = 500f;
             GameManager.Instance.stageCount++;
             if(GameManager.Instance.stageCount % 4 == 0)
             {

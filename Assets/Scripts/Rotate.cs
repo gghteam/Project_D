@@ -12,6 +12,7 @@ public class Rotate : MonoBehaviour
     private bool Check = false;
     public GameObject Pl;
     public Transform FirePos;
+    public bool isSpeed = true;
 
     private IEnumerator Moving()
     {
@@ -50,13 +51,18 @@ public class Rotate : MonoBehaviour
         if(GameObject.Find("PlayerCheck").GetComponent<PlayerMove>().isCheck == true)
         {
             StopCoroutine(Moving());
-            transform.localScale = new Vector2(transform.localScale.x+0.001f,transform.localScale.y+0.001f);
-            GameManager.Instance.speed += 30f;
-            /*if(GameManager.Instance.speed > 1000)
+            if(GameManager.Instance.speed < 1000)
+            {
+                transform.localScale = new Vector2(transform.localScale.x + 0.001f, transform.localScale.y + 0.001f);
+                GameManager.Instance.speed += 1f;
+            }
+
+            if(GameManager.Instance.speed >= 1000)
             {
                 GameManager.Instance.speed = 500;
-                
-            }*/
+                transform.localScale = new Vector3(0.5f, 0.7f, 0f);
+
+            }
         }
         if (GameManager.Instance.downCheck == true)
         {
