@@ -51,4 +51,13 @@ public class option1 : MonoBehaviour
     {
         SceneManager.LoadScene("Stage6");
     }
+
+    public void Level1()
+    {
+        SceneManager.LoadScene("Level");
+    }
+    public void Level2()
+    {
+        SceneManager.LoadScene("Level2");
+    }
 }

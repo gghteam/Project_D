@@ -4006,8 +4006,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2036881718}
   - component: {fileID: 2036881717}
-  - component: {fileID: 2036881719}
   - component: {fileID: 2036881716}
+  - component: {fileID: 2036881719}
   m_Layer: 0
   m_Name: goal_1
   m_TagString: Untagged
@@ -4104,7 +4104,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2036881715}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23c38b6000a8a914085801bcf8dd1bd9, type: 3}
+  m_Script: {fileID: 11500000, guid: f0a66ce8e2cf8624c878b62e489cb285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2039176207
