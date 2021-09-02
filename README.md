@@ -1,6 +1,13 @@
 # PPing
 ## 게임 엔진 기초 2 학기 팀프로젝트
 > PPing은 행성 모양의 플레이어 캐릭터(공)를 발사해 장애물을 활용/회피하여 골에 넣는 것이 목표인 게임입니다.
+> 또한 구글 플레이스토어를 비롯한 여러 곳에 출시했으며, 광고까지 넣어 놓았습니다.
+
+## 플레이 영상 
+### https://www.youtube.com/watch?v=eAKcvz9wQ70
+
+## 다운로드 링크
+### https://play.google.com/store/apps/details?id=com.UT.PPing&hl=ko&gl=US
 
 > 게임 플레이방식 
 >> 플레이어 캐릭터 (공)를 발사 할 지점으로 SHOOT (발사) 버튼을 눌러 (누른 시간이 길어질수록 속도도 빨라짐) 장애물을 활용,
